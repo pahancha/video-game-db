@@ -1,0 +1,82 @@
+.details-wrapper{
+    max-width: 880px;
+    margin: 20px auto;
+    position: relative;
+}
+
+.details {
+    ::ng-deep mwl-gauge {
+        width: 170px;
+        height: 170px;
+        display: block;
+        padding: 10px;
+
+        .dial{
+            stroke-width: 10;
+        }
+
+        .value {
+            stroke-dasharray: none;
+            stroke-width: 12;
+        }
+
+        .value-text {
+            fill: #fff;
+            font-weight: 700;
+            font-size: 22px;
+        }
+
+    }
+
+    .game-gauge {
+        position: absolute;
+        top: 50px;
+        right: 0;
+
+        &-label{
+            font-size: 20px;
+            color: #fff;
+            position: relative;
+            bottom: 40px;
+        }
+    }
+}
+
+.game {
+    &-banner {
+        height: 442px;
+        overflow: hidden;
+
+        &-image{
+            width: 100%;
+            filter: blur(7px);
+
+        }
+    }
+
+    &-content {
+        text-align: center;
+        position: relative;
+        top: -180px;
+    }
+
+    &-header {
+        &-title {
+            white-space: nowrap;
+            font-size: 65px;
+            color: #fff;
+            font-weight: 700;
+            line-height: 65px;
+        }
+
+        &-release-date{
+            color: #fff;
+            font-weight: 700;
+        }
+
+        &-genres{
+            color: white;
+            font-weight: 700;
+        }
+    }
+}
