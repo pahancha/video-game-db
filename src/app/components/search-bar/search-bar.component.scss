@@ -16,6 +16,7 @@
         width: 100%;
         max-width: 1200px;
         margin: 0 auto;
+        align-items: center;
     }
 
     &-input {
@@ -50,6 +51,7 @@
 }
 
 .logo{
+    font-size: large;
     margin-left: 10px;
     color: #fff;
     font-weight: 700;
